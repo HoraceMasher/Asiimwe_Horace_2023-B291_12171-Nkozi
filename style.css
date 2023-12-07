@@ -1,0 +1,202 @@
+body{
+    background: rgb(44,45,38);
+background: linear-gradient(90deg, rgba(44,45,38,1) 0%, rgba(7,7,8,1) 35%, rgba(0,176,255,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    color: white;
+}
+
+ a i{
+    color: #e44d8e;
+}
+.single-slider {
+
+    background-size: cover;
+
+    background-position: center center;
+
+}
+
+
+.hero {
+    width: 100%;
+    height: 110vh;
+    background: url(image\ 2.jpeg) top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    margin-bottom: 90px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+}
+
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #e44d8e;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 5px solid #e44d8e;
+    max-width: 150px;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #e44d8e;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ff6699;
+}
+
+
+.teammates-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.teammate-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.teammate-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+  
+/* Carousel Section */
+.carousel-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    text-align: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card-slide {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card-slide:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.card-slide:hover .poster img {
+    transform: scale(1.1);
+}
+
+
+.card-body {
+    color: black;
+}
+
+.card img{
+    width: 250px;
+    height: 150px;
+}
